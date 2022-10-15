@@ -1,13 +1,14 @@
 body {
     background-color: #e2e1e1fe;
     margin: 0;
+    /*font-family: unset;*/
 }
 
 aside {
     display: block;
     background: #f0f0f0;
     padding: 2px;
-    width: 10rem;
+    width: 12rem;
     float: left;
     position: fixed;
     height: 100%;
@@ -31,7 +32,7 @@ main {
 
 .flex_row1 {
     width: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 2%;
 }
 
@@ -52,46 +53,44 @@ main {
 }
 
 .form_main {
-    display: block;
     background-color: white;
-    height: 30rem;
+    height: 35rem;
     margin: 1rem;
-    width: 60%;
+    width: 70%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .label_form {
-    display: flex;
     justify-content: space-between;
     padding: 2%;
 }
 
 .label_up_form {
-    position: absolute;
+    
     background-color: crimson;
-    height: 2.5rem;
-    width: 47%;
-    margin-top: -3rem;
+    height: 3rem;
+    width: 100%;
+    margin-top: -2rem;
     color: whitesmoke;
 }
 
 .label_up_portret {
-    position: absolute;
     border: 1px solid black;
-    height: 10rem;
-    margin-top: -5rem;
+    height: 8rem;
+    margin-top: -3rem;
     border-radius: 100%;
 }
 
 .form_portfolio {
-    display: block;
     background-color: white;
     height: fit-content;
     margin: 1rem;
-    width: 40%;
+    width: 30%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .form_text {
-    margin-top: 4rem;
+    font-size: small;
     padding: 1rem;
 }
 
@@ -156,15 +155,30 @@ ul li a {
 
 footer p {
     text-align: left;
-    height: 30px;
-    padding-top: 1rem;
+    height: 25px;
+    padding: 0px;
     margin: 0px;
 }
 
 footer {
     display: block;
     margin-left: 11rem;
-    padding-right: 1rem;
+    padding-right: 2%;
+}
+
+.tri_poloski {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+}
+
+@media screen and (min-width:801px) {
+    .tri_poloski {
+        display: none;
+    }
 }
 
 @media screen and (min-width:800px) and (max-width:1000px) {
@@ -176,10 +190,6 @@ footer {
 
     .form_portfolio {
         width: fit-content;
-    }
-
-    .label_up_form {
-        width: 71%;
     }
 
     .form_main,
@@ -199,10 +209,6 @@ footer {
 
     .form_portfolio {
         width: fit-content;
-    }
-
-    .label_up_form {
-        width: 87%;
     }
 
     .form_main,
